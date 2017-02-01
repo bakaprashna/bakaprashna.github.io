@@ -2,13 +2,45 @@ header, main, footer {
   padding-left: 300px;
 }
 
-nav {
+nav.top-nav {
+	height: 122px;
+	box-shadow: none;
   color: #fff;
   background-color: #ee6e73;
+}
+
+a.button-collapse.top-nav {
+  position: absolute;
+  text-align: center;
+  height: 48px;
+  width: 48px;
+  left: 4.5%;
+  top: 0;
+  float: none;
+  color: #fff;
+  font-size: 36px;
+  z-index: 2;
+}
+nav.top-nav a.page-title {
+	line-height: 122px;
+	font-size: 48px;
+}
+
+a.button-collapse.top-nav i {
+  font-size: 32px;
+}
+a.button-collapse.top-nav.full {
+	line-height: 122px;
 }
 
 @media only screen and (max-width : 992px) {
   header, main, footer {
     padding-left: 0;
+  }
+  nav .nav-wrapper a.page-title {
+	  font-size: 36px;
+  }
+  nav .nav-wrapper {
+	  text-align: center;
   }
 }
