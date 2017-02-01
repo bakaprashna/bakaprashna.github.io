@@ -33,6 +33,29 @@ a.button-collapse.top-nav.full {
 	line-height: 122px;
 }
 
+ul.side-nav.fixed li.logo{
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 80px;
+}
+ul.side-nav.fixed li {
+    line-height: 44px;
+}
+ul:not(.browser-default) li {
+    list-style-type: none;
+}
+.side-nav li {
+    float: none;
+    line-height: 48px;
+}
+
+ul.side-nav.fixed li a {
+	font-size: 13px;
+	line-height: 44px;
+	height: 44px;
+	padding: 0 30px;
+}
+
 @media only screen and (max-width : 992px) {
   header, main, footer {
     padding-left: 0;
