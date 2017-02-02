@@ -31,7 +31,7 @@ a.button-collapse.top-nav {
   font-size: 36px;
   z-index: 2;
 }
-nav.top-nav a.page-title {
+nav.top-nav .page-title {
 	line-height: 122px;
 	font-size: 48px;
 }
@@ -43,34 +43,35 @@ a.button-collapse.top-nav.full {
 	line-height: 122px;
 }
 
-ul.side-nav.fixed li.logo {
+.side-nav.fixed .logo {
     text-align: center;
     margin-top: 32px;
-    margin-bottom: 80px;
+    margin-bottom: 32px;
 }
-ul.side-nav.fixed li {
+.side-nav.fixed .punch-line {
     line-height: 44px;
-}
-ul:not(.browser-default) li {
-    list-style-type: none;
+    margin-bottom: 1em;
 }
 .side-nav li {
     float: none;
     line-height: 48px;
 }
 
-ul.side-nav.fixed li a {
-	font-size: 13px;
-	line-height: 44px;
-	height: 44px;
-	padding: 0 30px;
+.side-nav.fixed a {
+	line-height: inherit;
+	height: inherit;
+	padding: 0;
+}
+
+.side-nav.fixed a:hover {
+  background-color: none;
 }
 
 @media only screen and (max-width : 992px) {
   header, main, footer {
     padding-left: 0;
   }
-  nav .nav-wrapper a.page-title {
+  nav .nav-wrapper .page-title {
 	  font-size: 36px;
   }
   nav .nav-wrapper {
