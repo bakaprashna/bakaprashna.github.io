@@ -85,23 +85,32 @@
           </div>
           <div class="col s12 m12 l5">
             <div class="row">
+              <h1 class="flow-text">Ask/say something new</h1>
+            </div>
+            <div>
               <form class="col s12" method="POST" action="/new">
                 <div class="row">
                   <div class="input-field col s12">
-                    <textarea id="textarea1" class="materialize-textarea"></textarea>
-                    <label for="textarea1">Ask/say something new</label>
+                    <input placeholder="Title for your post" id="title" type="text" class="validate" data-length="50">
+                    <label for="title">Title</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea" data-length="500"></textarea>
+                    <label for="textarea1">Your question/rant/observation</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input placeholder="programming programming-language python rust" id="tags" type="text" class="validate">
+                    <label for="tags">Tags</label>
                   </div>
                 </div>
                 <div class="row">
                   <div class="input-field col s12">
                     <input type="checkbox" id="is-private">
-                    <label for="is-private">Is Private?(Only people with link can access, not shown on frontpage)</label>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="input-field col s12">
-                    <input placeholder="Comma separated list of words" id="tags" type="text" class="validate">
-                    <label for="tags">Tags</label>
+                    <label for="is-private">Is Private? (Only people with link can access, not shown on frontpage)</label>
                   </div>
                 </div>
 
