@@ -51,13 +51,24 @@
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           </div>
           <div class="col s12 m12 l5">
-            <h1 class="flow-text">Ask/say something new</h1>
             <div class="row">
               <form class="col s12" method="POST" action="/new">
                 <div class="row">
                   <div class="input-field col s12">
                     <textarea id="textarea1" class="materialize-textarea"></textarea>
-                    <label for="textarea1">Textarea</label>
+                    <label for="textarea1">Ask/say something new</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input type="checkbox" id="is-private">
+                    <label for="is-private">Is Private?(Only people with link can access, not shown on frontpage)</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input placeholder="Comma separated list of words" id="tags" type="text" class="validate">
+                    <label for="tags">Tags</label>
                   </div>
                 </div>
 
